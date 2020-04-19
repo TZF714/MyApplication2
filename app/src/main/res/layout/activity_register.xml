@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/registertitle"></include>
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">e
+<TextView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/huojianfashe"/>
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/register_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="用户名："/>
+
+        <EditText
+            android:id="@+id/et_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入用户名"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_register_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="密    码："
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_register_password1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_register_password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码："
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_register_password2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:hint="请再次输入密码"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bg_login"
+        android:textColor="#fff"
+        android:text="注         册"
+        android:textSize="25dp"
+        android:onClick="onClick"
+        android:layout_marginTop="40dp"
+        />
+    </LinearLayout>
+</RelativeLayout>
